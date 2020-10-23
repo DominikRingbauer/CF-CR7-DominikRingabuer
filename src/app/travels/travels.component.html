@@ -1,1 +1,111 @@
-<p>travels works!</p>
+<h1 class="text-center m-5">Subscribe to our newsletter</h1>
+
+<form [formGroup]="travelForm">
+
+	<div class="row">
+
+		<div class="col-sm-12 col-lg-6 text-center" id="left">
+
+			<label>
+				Gender:
+				<select>
+					<option disabled selected></option>
+					<option>Male</option>
+					<option>Female</option>
+				</select>
+			</label><br>
+
+			<label>
+				First Name:
+				<input type="text" formControlName="firstName">
+			</label><br>
+
+			<label>
+				Last Name:
+				<input type="text" formControlName="lastName">
+			</label><br>
+
+			<label>
+				E-Mail:
+				<input type="email" formControlName="email">
+			</label>
+
+		</div>
+
+		<div class="col-sm-12 col-lg-6 text-center" id="right">
+
+			<label>
+				Your Message:<br>
+				<textarea cols="50" rows="7" style="resize:none"></textarea>
+			</label>
+			
+		</div>
+
+	</div>
+
+	<div class="text-center">
+		<button class="btn btn-info" type="submit">Subscribe</button>
+	</div>
+
+</form>
+
+<h1 class="text-center m-5">Currently we offer the following travels</h1>
+
+<div class="row">
+	<div *ngFor="let offer of offers" class="col-lg-6">	
+		<div class="card mb-5">
+		  <img class="card-img-top" src="{{offer.image}}" alt="Card image cap">
+		  <div class="card-body">
+		  	<h4 class="card-title">{{offer.name}}</h4>
+		    <p class="card-text">{{offer.description}}</p>
+		  </div>
+		  <div class="card-footer text-muted">
+		    <p>{{offer.destination}}</p>
+		    <p>{{offer.start}}</p>
+		    <p>{{offer.duration}}</p>
+		    <p>{{offer.price}} €</p>
+		    <button class="btn btn-info btn-block" type="submit">Book trip</button>
+		  </div>
+		</div>
+	</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
