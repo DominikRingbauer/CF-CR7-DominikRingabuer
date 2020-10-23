@@ -63,8 +63,8 @@
 		    <p>{{offer.destination}}</p>
 		    <p>{{offer.start}}</p>
 		    <p>{{offer.duration}}</p>
-		    <p>{{offer.price}} €</p>
-		    <button class="btn btn-info btn-block" type="submit">Book trip</button>
+		    <p class="text-success">only {{offer.price}} €</p>
+		    <button (click)="addToCart(product)" class="btn btn-info btn-block">Book trip</button>
 		  </div>
 		</div>
 	</div>

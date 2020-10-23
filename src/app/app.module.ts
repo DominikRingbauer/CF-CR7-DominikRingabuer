@@ -7,10 +7,10 @@ import { HomeComponent } from './home/home.component';
 import { BlogComponent } from './blog/blog.component';
 import { TravelsComponent } from './travels/travels.component';
 import { CartComponent } from './cart/cart.component';
-import { TravelDetailsComponent } from './travel-details/travel-details.component';
 import { NavbarComponent } from './navbar/navbar.component';
 
 import { ReactiveFormsModule } from '@angular/forms';
+import { TravelsDetailsComponent } from './travels-details/travels-details.component';
 
 @NgModule({
   declarations: [
@@ -19,8 +19,8 @@ import { ReactiveFormsModule } from '@angular/forms';
     BlogComponent,
     TravelsComponent,
     CartComponent,
-    TravelDetailsComponent,
-    NavbarComponent
+    NavbarComponent,
+    TravelsDetailsComponent
   ],
   imports: [
     BrowserModule,
