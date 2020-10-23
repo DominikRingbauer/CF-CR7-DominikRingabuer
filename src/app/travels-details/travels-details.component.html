@@ -1,1 +1,13 @@
-<p>travels-details works!</p>
+<div class="background">
+
+	<h1>Trip Details</h1>
+
+	<div *ngIf="offer">
+		<h3>{{offer.name}}</h3>
+		<h4>{{offer.price }} €</h4>
+		<p>{{offer.description}}</p>
+
+		<button class="btn btn-info" (click)="addToCart(offer);">Book trip</button>
+	</div>
+
+</div>

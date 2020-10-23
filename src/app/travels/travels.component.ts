@@ -21,12 +21,8 @@ export class TravelsComponent implements OnInit {
 
 	offers = offers;
 
-  constructor(private cartService: CartService) { }
+  constructor() { }
 
-  addToCart(product) {
-  	this.cartService.addToCart(product);
-  	window.alert("Your trip has been added to your cart!");
-  }
   
 
   ngOnInit(): void {

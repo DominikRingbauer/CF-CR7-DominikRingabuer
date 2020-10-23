@@ -5,6 +5,7 @@ import { HomeComponent } from './home/home.component';
 import { BlogComponent } from './blog/blog.component';
 import { TravelsComponent } from './travels/travels.component';
 import { CartComponent } from './cart/cart.component';
+import { TravelsDetailsComponent } from './travels-details/travels-details.component';
 
 
 const routes: Routes = [
@@ -20,6 +21,9 @@ const routes: Routes = [
 	{
 		path: "cart", component: CartComponent
 	},
+	{
+		path: "offers/:offerId", component: TravelsDetailsComponent
+	}
 ];
 
 @NgModule({
