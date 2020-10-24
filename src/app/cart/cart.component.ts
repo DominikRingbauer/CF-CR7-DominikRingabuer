@@ -8,21 +8,29 @@ import { CartService } from '../cart.service';
 })
 export class CartComponent implements OnInit {
 	items;
+	
 
 
   constructor(private cartService: CartService) { }
 
 
 
+
+
   ngOnInit(): void {
+ 
   	this.items = this.cartService.getItems();
-  	for (var i of this.items) {	
-  		let sum = [this.items[5]];
-  		console.log(i.price);
-  		document.getElementById("result").innerHTML += i.price;
-  	}
-  	
+
+  	let sum = $("#prize").value;
+  	console.log(sum);
+
   }
 
 }
+
+
+
+
+
+
 

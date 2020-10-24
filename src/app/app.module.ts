@@ -11,6 +11,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 
 import { ReactiveFormsModule } from '@angular/forms';
 import { TravelsDetailsComponent } from './travels-details/travels-details.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { TravelsDetailsComponent } from './travels-details/travels-details.compo
     TravelsComponent,
     CartComponent,
     NavbarComponent,
-    TravelsDetailsComponent
+    TravelsDetailsComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

@@ -1,9 +1,12 @@
 img {
-	height: 30vw;
+	height: 35vh;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
 }
 
 .card {
 	background-color: rgba(255,255,255,0);
+	border-radius: 10px;
 }
 
 .card > .card-body {
@@ -12,4 +15,6 @@ img {
 
 .card > .card-footer {
 	background-color: rgba(255,255,255,0.8);
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
 }
