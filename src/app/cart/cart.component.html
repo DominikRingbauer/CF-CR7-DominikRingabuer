@@ -1,10 +1,11 @@
 <div class="background">
 
-	<h1 id="prize">Cart</h1>
+	<h1 id="prize">This is your cart</h1>
 <span id="empty"></span>
 	<div class="cart-item" *ngFor="let item of items">
-		<span>{{ item.price}}</span>
-		<span>&#10048; {{ item.name }} </span>
+		<span>{{ item.price}} €</span>
+		<span> &#10048; {{ item.name }} </span>
+		<span>{{ total }}</span>
 	</div>
 	<p id="result"></p>
 

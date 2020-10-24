@@ -21,8 +21,9 @@ export class CartComponent implements OnInit {
  
   	this.items = this.cartService.getItems();
 
-  	let sum = $("#prize").value;
-  	console.log(sum);
+    for (let i of this.items) {
+      console.log(i.price);
+    }
 
   }
 

@@ -2,12 +2,19 @@
 
 	<h1>Trip Details</h1>
 
-	<div *ngIf="offer">
+	<div *ngIf="offer" class="d-flex">
+		<div>
 		<h3>{{offer.name}}</h3>
 		<h4>{{offer.price }} €</h4>
 		<p>{{offer.description}}</p>
-
 		<button class="btn btn-info" (click)="addToCart(offer);">Book trip</button>
+		</div>
+
+		<div>
+			<img class="ml-5" src="{{offer.image}}">
+		</div>		
 	</div>
+
+	<p>*This trip includes full board in a 5 star hotel.</p>	
 
 </div>
